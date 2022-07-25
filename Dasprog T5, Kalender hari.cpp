@@ -38,12 +38,9 @@ int main()
     
     // Add 1 day if the year is a leap year
     tday = tday + nk;
-/*
-    if (thn % 400 == 0)
-    {
-        b2 = b2 + 1;
-    }
-    else 
+    
+/*  // Not really necessary
+    if (thn % 400 == 0){b2 = b2 + 1;}else 
 */
     
     if (thn % 100 != 0 && thn % 400 != 0 && thn % 4 == 0)
