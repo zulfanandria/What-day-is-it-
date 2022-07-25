@@ -12,12 +12,17 @@ int main()
     cout << "Tahun      : ";
     cin >> thn;
 
+    // Total day of each month (with 28 days of February)
     int b1 = 31, b2 = 28, b3 = 31, b4 = 30, b5 = 31, b6 = 30, b7 = 31, b8 = 31, b9 = 30, b10 = 31, b11 = 30, b12 = 31;
-
+    
+    // tbln = Total day of a year (with 28 days of February)
     int tbln = b1 + b2 + b3 + b4 + b5 + b6 + b7 + b8 + b9 + b10 + b11 + b12;
+    
+    // The year start from 0 C
     int tthn = thn - 1;
     int nk = 0, kthn = thn, tday = tthn * tbln;
 
+    // Check if the year has a leap day
     for (int i = thn; i >= 0; i--)
     {
         kthn--;
@@ -30,18 +35,23 @@ int main()
             nk++;
         }
     }
-
+    
+    // Add 1 day if the year is a leap year
     tday = tday + nk;
 /*
     if (thn % 400 == 0)
     {
         b2 = b2 + 1;
     }
-    else */if (thn % 100 != 0 && thn % 400 != 0 && thn % 4 == 0)
+    else 
+*/
+    
+    if (thn % 100 != 0 && thn % 400 != 0 && thn % 4 == 0)
     {
         b2 = b2 + 1;
     }
 
+    // Adding the total amount of day the input year has
     int tnum;
     if (bln == 1)
     {
@@ -91,9 +101,11 @@ int main()
     {
         tnum = tgl + b1 + b2 + b3 + b4 + b5 + b6 + b7 + b8 + b9 + b10 + b11;
     }
-
+    
+    // Because the year start from 0 C, we add the input year total day with all the day of the year before to 0 C
     tday = tday + tnum;
 
+    // Determining the day by using modulo 
     int modulday;
     modulday = tday % 7;
 
