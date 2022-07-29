@@ -11,6 +11,7 @@ int main()
     cin >> bln;
 
     int nkbst = 0, kthn = thn - 1, tday = kthn * 365;
+    
     for (int i = kthn; i >= 0; i--)
     {
         if (i % 400 == 0)
@@ -22,6 +23,7 @@ int main()
             nkbst++;
         }
     }
+    
     if (bln > 2)
     {
         if (thn % 400 == 0)
@@ -43,6 +45,7 @@ int main()
     int b1 = 31, b2 = 28, b3 = 31, b4 = 30, b5 = 31, b6 = 30, b7 = 31, b8 = 31, b9 = 30, b10 = 31, b11 = 30, b12 = 31;
 
     int tnum;
+    
     if (bln == 1)
     {
         tnum = 0;
@@ -114,7 +117,9 @@ int main()
     {
         cout << "   ";
     }
+    
     int tgl = 1;
+    
     for (int k = 1; k <= 7; k++)
     {
         int brs = 1;
