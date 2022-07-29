@@ -1,4 +1,5 @@
 #include <iostream>
+#indluce <math.h>
 
 using namespace std;
 
