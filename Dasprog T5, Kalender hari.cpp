@@ -1,10 +1,10 @@
 #include <iostream>
-#indluce <math.h>
 
 using namespace std;
 
 int main()
 {
+    // Memasukkan tanggal, bulan, dan tahun
     int tgl, bln, thn;
     cout << "Tanggal    : ";
     cin >> tgl;
