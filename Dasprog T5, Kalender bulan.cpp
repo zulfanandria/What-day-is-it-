@@ -42,14 +42,17 @@ int main()
         }
     }
 
+    // Menunjukan Bulan
     string month[12] = {"       Januari      ", "      Februari      ", "       Maret        ", "       April        ", "        Mei         ",
                         "        Juni        ", "        Juli        ", "      Agustus       ", "     September      ", "      Oktober       ",
                         "      November      ", "      Desember      "};
     cout << endl
          << month[bln - 1] << endl;
 
+    // Jumlah hari dalam tiap bulannya
     int b1 = 31, b2 = 28, b3 = 31, b4 = 30, b5 = 31, b6 = 30, b7 = 31, b8 = 31, b9 = 30, b10 = 31, b11 = 30, b12 = 31;
-
+    
+    // tnum = Jumlah hari pada tahun input saja
     int tnum;
     
     if (bln == 1)
