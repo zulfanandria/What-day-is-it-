@@ -16,6 +16,7 @@ int main()
     // tday = Total hari dalam kthn
     int nkbst = 0, kthn = thn - 1, tday = kthn * 365;
     
+    // Menghitung jumlah tahun kabisat
     for (int i = kthn; i >= 0; i--)
     {
         if (i % 400 == 0)
@@ -28,6 +29,7 @@ int main()
         }
     }
     
+    // Menambahkan 1 hari pada bulan Februari berdasarkan jumlah tahun kabisatnya
     if (bln > 2)
     {
         if (thn % 400 == 0)
