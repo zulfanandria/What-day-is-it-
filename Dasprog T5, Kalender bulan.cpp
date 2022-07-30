@@ -4,6 +4,7 @@ using namespace std;
 
 int main()
 {
+    // Memasukkan bulan dan tahun
     int bln, thn;
     cout << "Tahun      : ";
     cin >> thn;
