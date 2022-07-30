@@ -11,6 +11,9 @@ int main()
     cout << "Bulan      : ";
     cin >> bln;
 
+    // nkbst = Jumlah tahun kabisat
+    // kthn = Jumlah tahun sebelum tahun input
+    // tday = Total hari dalam kthn
     int nkbst = 0, kthn = thn - 1, tday = kthn * 365;
     
     for (int i = kthn; i >= 0; i--)
